@@ -10,7 +10,8 @@
                         <li class="active">Управление категориями</li>
                     </ol>
                 </div>
-                <a href="/admin/category/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить категорию</a>
+                <a href="/admin/category/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить
+                    категорию</a>
                 <h4>Список товаров</h4>
                 <br/>
                 <table class="table-bordered table-striped table">
@@ -26,8 +27,10 @@
                             <td><?php echo $category['id']; ?></td>
                             <td><?php echo $category['name']; ?></td>
                             <td><?php echo $category['status']; ?></td>
-                            <td><a href="/admin/category/update/<?php echo $category['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i></a></td>
-                            <td><a href="/admin/category/delete/<?php echo $category['id']; ?>" title="Удалить"><i class="fa fa-times"></i></a></td>
+                            <td><a href="/admin/category/update/<?php echo $category['id']; ?>" title="Редактировать"><i
+                                            class="fa fa-pencil-square-o"></i></a></td>
+                            <td><a href="/admin/category/delete/<?php echo $category['id']; ?>" title="Удалить"><i
+                                            class="fa fa-times"></i></a></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>

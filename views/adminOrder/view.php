@@ -17,7 +17,6 @@
                 <h4>Просмотр заказа #<?php echo $order['id']; ?></h4>
                 <br/>
 
-
                 <h5>Информация о заказе</h5><br>
                 <table class="table-admin-small table-bordered table-striped table">
                     <tr>

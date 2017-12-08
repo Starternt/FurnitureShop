@@ -2,17 +2,15 @@
 
 class UserController
 {
-
     public function actionRegistration()
     {
-        if(User::isLogged()){
+        if (User::isLogged()) {
             header("Location: /cabinet");
         }
         $name = false;
         $password = false;
         $email = false;
         $result = false;
-
 
         if (isset($_POST['submit'])) {
             $name = $_POST['name'];
@@ -39,7 +37,6 @@ class UserController
             }
         }
 
-
         require_once(ROOT . '/views/user/registration.php');
         return true;
     }
@@ -47,7 +44,7 @@ class UserController
     public function actionLogin()
     {
         $active = 3;
-        if(User::isLogged()){
+        if (User::isLogged()) {
             header("Location: /cabinet");
         }
         $email = false;

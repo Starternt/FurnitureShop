@@ -19,7 +19,7 @@
 
                 <div class="col-lg-4">
                     <div class="login-form">
-                        <form action="" method="post" enctype="multipart/form-data"> <!-- enctype необходим для отправки изображения -->
+                        <form action="" method="post" enctype="multipart/form-data">
                             <p>Название товара</p>
                             <input type="text" name="name" placeholder="Наименование" value="" required>
                             <p>Артикул</p>
@@ -31,7 +31,7 @@
                                 <?php if (is_array($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
                                         <option
-                                            value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
+                                                value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </select>

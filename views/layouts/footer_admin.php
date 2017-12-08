@@ -1,7 +1,7 @@
 <div class="page-buffer"></div>
 </div>
 
-<footer id="footer" class="page-footer"><!--Footer-->
+<footer id="footer" class="page-footer">
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-</footer><!--/Footer-->
+</footer>
 <script src="/template/js/jquery.scrollUp.min.js"></script>
 <script src="/template/js/price-range.js"></script>
 <script src="/template/js/jquery.prettyPhoto.js"></script>

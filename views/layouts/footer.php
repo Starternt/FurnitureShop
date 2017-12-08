@@ -5,8 +5,10 @@
             <li><a href="index2.html">Категории</a>|</li>
             <li><a href="index2.html">Личный кабинет</a>|</li>
             <li><a href="index2.html">О нас</a></li>
-        </ul><br /><br />
-        <p>Copyright &copy;. All rights reserved. Design by <a href="http://www.bestfreetemplates.info" target="_blank" title="Best Free Templates">BFT</a></p>
+        </ul>
+        <br/><br/>
+        <p>Copyright &copy;. All rights reserved. Design by <a href="http://www.bestfreetemplates.info" target="_blank"
+                                                               title="Best Free Templates">BFT</a></p>
     </div>
 </div>
 <map name="Map">
@@ -15,12 +17,11 @@
     <area shape="poly" coords="776,124,818,152,793,189,751,160" href="/login">
     <area shape="poly" coords="834,52,885,61,878,105,828,96" href="/cart">
 </map>
-<!--<script src="/template/js/jquery.js"></script> <!-- без jquery ajax не пашет -->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".add-to-cart").click(function () {
             var id = $(this).attr("data-id");
-            $.post("/cart/addAjax/"+id, {}, function (data) {
+            $.post("/cart/addAjax/" + id, {}, function (data) {
                 $("#cart-count").html(data);
             });
             return false;

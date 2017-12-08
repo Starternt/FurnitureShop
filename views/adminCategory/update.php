@@ -22,13 +22,18 @@
                 <div class="login-form">
                     <form action="" method="post">
                         <p>Наименование категории</p>
-                        <input type="text" name="name" placeholder="Наименование" value="<?php echo $category['name']; ?>">
+                        <input type="text" name="name" placeholder="Наименование"
+                               value="<?php echo $category['name']; ?>">
                         <p>Порядок сортировки</p>
-                        <input type="text" name="sort_order" placeholder="Артикул" value="<?php echo $category['sort_order']; ?>">
+                        <input type="text" name="sort_order" placeholder="Артикул"
+                               value="<?php echo $category['sort_order']; ?>">
                         <p>Статус</p>
                         <select name="status">
-                            <option value="0" <?php if($category['status']==0) echo 'selected="selected"'; ?>>Скрыт</option>
-                            <option value="1" <?php if($category['status']==1) echo 'selected="selected"'; ?>>Отображается</option>
+                            <option value="0" <?php if ($category['status'] == 0) echo 'selected="selected"'; ?>>Скрыт
+                            </option>
+                            <option value="1" <?php if ($category['status'] == 1) echo 'selected="selected"'; ?>>
+                                Отображается
+                            </option>
                         </select>
                         <br><br><br>
                         <input type="submit" class="btn btn-default" name="submit" value="Сохранить">

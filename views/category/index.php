@@ -1,34 +1,55 @@
-<?php include ROOT.'/views/layouts/header.php'; ?>
-<div id="wrapper">
-    <div id="content_inside">
-        <div id="sidebar">
-            <img src="/template/css/images/title1.gif" alt="" width="174" height="30" /><br />
-            <ul id="list">
-                <?php foreach($category as $categoryItem): ?>
-                    <li class="color"><a href="/category/<?php echo $categoryItem['id']; ?>"><?php if($categoryItem['id']%2){echo $categoryItem['name'];} ?></a></li>
-                    <li><a href="/category/<?php echo $categoryItem['id']; ?>"><?php if(!($categoryItem['id']%2)){echo $categoryItem['name'];} ?></a></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <div id="main_block">
-            <div class="about">
-                <img src="/template/css/images/title2.gif" alt="" width="191" height="30" /><br />
-                <p>Illuloremm secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco cui eros, euismod quis illum, commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam. Appellatio vel hos autem, ludus luptatum mauris ratis jugis interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco cui eros, euismod quis illum, commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam. </p>
+<?php include ROOT . '/views/layouts/header.php'; ?>
+
+    <div id="wrapper">
+        <div id="content_inside">
+            <div id="sidebar">
+                <img src="/template/css/images/title1.gif" alt="" width="174" height="30"/><br/>
+                <ul id="list">
+                    <?php foreach ($category as $categoryItem): ?>
+                        <li class="color"><a
+                                    href="/category/<?php echo $categoryItem['id']; ?>"><?php if ($categoryItem['id'] % 2) {
+                                    echo $categoryItem['name'];
+                                } ?></a></li>
+                        <li>
+                            <a href="/category/<?php echo $categoryItem['id']; ?>"><?php if (!($categoryItem['id'] % 2)) {
+                                    echo $categoryItem['name'];
+                                } ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
-            <div class="news">
-                <img src="/template/css/images/title3.gif" alt="" width="69" height="30" /><br />
-                <p>Illum secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco cui eros, euismod quis illum, commodo. </p>
-            </div>
-            <div id="items">
-                <?php foreach($products as $productItem): ?>
-                <div class="item">
-                    <img src="<?php echo $productItem['image'] ?>" alt="" width="202" height="173" /><br />
-                    <span><?php echo $productItem['price'].'$' ?></span><a href="/product/<?php echo $productItem['id'] ?>" class="view">View</a><a href="#" class="buy add-to-cart" data-id="<?php echo $productItem['id']; ?>">Buy this Product</a>
+            <div id="main_block">
+                <div class="about">
+                    <img src="/template/css/images/title2.gif" alt="" width="191" height="30"/><br/>
+                    <p>Illuloremm secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter
+                        inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis
+                        interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco
+                        cui eros, euismod quis illum, commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam.
+                        Appellatio vel hos autem, ludus luptatum mauris ratis jugis interdico. Gilvus consequat abico
+                        demoveo lenis validus typicus ut commodo. Consequat, eu voco cui eros, euismod quis illum,
+                        commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam. </p>
                 </div>
-                <?php endforeach; ?>
+                <div class="news">
+                    <img src="/template/css/images/title3.gif" alt="" width="69" height="30"/><br/>
+                    <p>Illum secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter
+                        inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis
+                        interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco
+                        cui eros, euismod quis illum, commodo. </p>
+                </div>
+                <div id="items">
+                    <?php foreach ($products as $productItem): ?>
+                        <div class="item">
+                            <img src="<?php echo $productItem['image'] ?>" alt="" width="202" height="173"/><br/>
+                            <span><?php echo $productItem['price'] . '$' ?></span><a
+                                    href="/product/<?php echo $productItem['id'] ?>" class="view">View</a><a href="#"
+                                                                                                             class="buy add-to-cart"
+                                                                                                             data-id="<?php echo $productItem['id']; ?>">Buy
+                                this Product</a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php echo $pagination->get(); ?>
             </div>
-            <?php echo $pagination->get(); ?>
         </div>
     </div>
-</div>
-<?php include_once ROOT.'/views/layouts/footer.php';?>
+
+<?php include_once ROOT . '/views/layouts/footer.php'; ?>

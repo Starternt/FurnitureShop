@@ -17,7 +17,6 @@
                 <form action="" method="post">
                     <input type="submit" name="submit" value="Подтвердить">
                 </form>
-
             </div>
         </div>
     </section>
