@@ -38,7 +38,7 @@ class AdminOrderController
             header('Location: /');
         }
         if (isset($_POST['submit'])) {
-            Product::deleteOrder($id);
+            Order::deleteOrder($id);
             header('Location:/admin/order');
         }
 
@@ -52,14 +52,13 @@ class AdminOrderController
         }
         $order = Order::getOrderById($id);
         if (isset($_POST['submit'])) {
-            $options['user_name'] = $_POST['user_name'];
-            $options['user_phone'] = $_POST['user_phone'];
-            $options['user_comment'] = $_POST['user_comment'];
-            $options['date'] = $_POST['date'];
-            $options['status'] = $_POST['status'];
+            $options['user_name'] = htmlspecialchars($_POST['user_name']);
+            $options['user_phone'] = htmlspecialchars($_POST['user_phone']);
+            $options['user_comment'] = htmlspecialchars($_POST['user_comment']);
+            $options['date'] = htmlspecialchars($_POST['date']);
+            $options['status'] = htmlspecialchars($_POST['status']);
             Order::updateOrderById($id, $options);
             header('Location:/admin/order');
-
         }
 
         require_once ROOT . '/views/adminOrder/update.php';

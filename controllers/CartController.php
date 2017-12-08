@@ -44,9 +44,9 @@ class CartController
         $totalPrice = Cart::getTotalPrice();
         $goodsAmount = Cart::countItems();
         if (isset($_POST['submit'])) {
-            $name = $_POST['name'];
-            $phone = $_POST['phone'];
-            $comment = $_POST['comment'];
+            $name = htmlspecialchars($_POST['name']);
+            $phone = htmlspecialchars($_POST['phone']);
+            $comment = htmlspecialchars($_POST['comment']);
             $id = $_SESSION['user'];
             $productsList = Cart::getProducts(); //Список id=>количество, товары
             $errors = false;

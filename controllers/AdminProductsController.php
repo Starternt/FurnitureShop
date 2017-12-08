@@ -35,14 +35,14 @@ class AdminProductsController
         $categories = Category::getCategoriesList();
         $product = Product::getProductById($id);
         if (isset($_POST['submit'])) {
-            $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
-            $options['price'] = $_POST['price'];
-            $options['category'] = $_POST['category'];
-            $options['brand'] = $_POST['brand'];
-            $options['description'] = $_POST['description'];
-            $options['availability'] = $_POST['availability'];
-            $options['status'] = $_POST['status'];
+            $options['name'] = htmlspecialchars($_POST['name']);
+            $options['code'] = htmlspecialchars($_POST['code']);
+            $options['price'] = htmlspecialchars($_POST['price']);
+            $options['category'] = htmlspecialchars($_POST['category']);
+            $options['brand'] = htmlspecialchars($_POST['brand']);
+            $options['description'] = htmlspecialchars($_POST['description']);
+            $options['availability'] = htmlspecialchars($_POST['availability']);
+            $options['status'] = htmlspecialchars($_POST['status']);
 
             if (Product::updateProductById($id, $options)) {
                 if (is_uploaded_file($_FILES['image']['tmp_name'])) {
@@ -64,14 +64,14 @@ class AdminProductsController
         $categories = Category::getCategoriesList();
 
         if (isset($_POST['submit'])) {
-            $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
-            $options['price'] = $_POST['price'];
-            $options['category'] = $_POST['category'];
-            $options['brand'] = $_POST['brand'];
-            $options['description'] = $_POST['description'];
-            $options['availability'] = $_POST['availability'];
-            $options['status'] = $_POST['status'];
+            $options['name'] = htmlspecialchars($_POST['name']);
+            $options['code'] = htmlspecialchars($_POST['code']);
+            $options['price'] = htmlspecialchars($_POST['price']);
+            $options['category'] = htmlspecialchars($_POST['category']);
+            $options['brand'] = htmlspecialchars($_POST['brand']);
+            $options['description'] = htmlspecialchars($_POST['description']);
+            $options['availability'] = htmlspecialchars($_POST['availability']);
+            $options['status'] = htmlspecialchars($_POST['status']);
 
             $id = Product::createProduct($options);
             if ($id) {

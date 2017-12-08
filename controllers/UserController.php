@@ -13,9 +13,9 @@ class UserController
         $result = false;
 
         if (isset($_POST['submit'])) {
-            $name = $_POST['name'];
-            $password = $_POST['password'];
-            $email = $_POST['email'];
+            $name = htmlspecialchars($_POST['name']);
+            $password = htmlspecialchars($_POST['password']);
+            $email = htmlspecialchars($_POST['email']);
 
             $errors = false;
 
