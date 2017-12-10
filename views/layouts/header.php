@@ -15,7 +15,7 @@
             <li><a href="/"
                    class="<?php if (isset($active) && $active == 1) echo "but" . $active . "_active"; else echo "but1"; ?>">Главная</a>
             </li>
-            <li><a href="/"
+            <li><a href="/registration"
                    class="<?php if (isset($active) && $active == 2) echo "but" . $active . "_active"; else echo "but2"; ?>">Регистрация</a>
             </li>
             <li><a href="/cabinet"

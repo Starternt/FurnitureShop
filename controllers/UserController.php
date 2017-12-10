@@ -4,6 +4,7 @@ class UserController
 {
     public function actionRegistration()
     {
+        $active = 2;
         if (User::isLogged()) {
             header("Location: /cabinet");
         }

@@ -4,8 +4,6 @@ class CatalogController
 {
     public function actionIndex($categoryId, $page = 1)
     {
-        $active = 2;
-
         $category = Category::getCategoriesList();
         $products = Product::getProductsByCategory($categoryId, $page);
         $total = Product::getTotalCountProductsByCategory($categoryId);

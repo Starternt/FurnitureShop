@@ -1,5 +1,5 @@
-<?php $active = 1; // определяет выделение меню в хедере?>
 <?php include ROOT.'/views/layouts/header.php'; ?>
+
     <div id="wrapper">
         <div id="content_inside">
             <div id="main_block">
