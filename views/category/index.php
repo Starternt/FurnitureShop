@@ -24,7 +24,7 @@
                         inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis
                         interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco
                         cui eros, euismod quis illum, commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam.
-                        Appellatio vel hos autem, ludus luptatum mauris ratis jugis interdico. Gilvus consequat abico
+                        Appellatio vel hos autem, ludus luptatum mauris ratis jugis interddico. Gilvus consequat abico
                         demoveo lenis validus typicus ut commodo. Consequat, eu voco cui eros, euismod quis illum,
                         commodo. Nibh valde tincidunt ex quae ratis meus neo aliquam. </p>
                 </div>
