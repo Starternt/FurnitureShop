@@ -45,16 +45,17 @@ class User
     {
         $db = Db::getConnection();
 
-        $sql = 'SELECT * FROM `user` WHERE `email` = :email AND `password` = :password';
+        $sql = 'SELECT * FROM `user` WHERE `email` = :email';
 
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_INT);
-        $result->bindParam(':password', $password, PDO::PARAM_INT);
         $result->execute();
         $user = $result->fetch();
 
         if ($user) {
-            return $user['id'];
+            if(password_verify($password, $user['password'])){
+                return $user['id'];
+            }
         }
         return false;
     }
@@ -66,6 +67,7 @@ class User
 
     public static function registration($name, $password, $email)
     {
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $db = Db::getConnection();
 
         $sql = 'INSERT INTO `user`(name, email, password) VALUES(:name, :email, :password)';

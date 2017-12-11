@@ -7,8 +7,10 @@
             <li><a href="index2.html">О нас</a></li>
         </ul>
         <br/><br/>
-        <p>Copyright &copy;. All rights reserved. Design by <a href="http://www.bestfreetemplates.info" target="_blank"
-                                                               title="Best Free Templates">BFT</a></p>
+        <p>Права на макет принадлежат &copy;<a href="http://www.bestfreetemplates.info" target="_blank"
+                                                               title="Best Free Templates">BFT</a>
+
+        </p>
     </div>
 </div>
 <map name="Map">

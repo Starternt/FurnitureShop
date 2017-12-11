@@ -30,10 +30,15 @@
                 </div>
                 <div class="news">
                     <img src="/template/css/images/title3.gif" alt="" width="69" height="30"/><br/>
-                    <p>Illum secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter
-                        inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis
-                        interdico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. Consequat, eu voco
-                        cui eros, euismod quis illum, commodo. </p>
+                    <p> Мы принимаем все заказы – от самых маленьких и до самых больших.*
+
+                        Складская программа и собственная филиальная сеть.
+
+                        Также в нашем интернет-магазине действует следующая система скидок от розничных цен:
+
+                        На продукцию BLUM скидки зависят от суммы заказа и рассчитываются автоматически.
+
+                        На продукцию Vauth-Sagel скидки зависят от суммы заказа и рассчитываются автоматически</p>
                 </div>
                 <div id="items">
                     <?php foreach ($products as $productItem): ?>
