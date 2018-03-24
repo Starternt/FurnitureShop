@@ -1,10 +1,10 @@
 <div id="footer">
     <div id="footer_inside">
         <ul class="footer_menu">
-            <li><a href="index.html">Главная</a>|</li>
-            <li><a href="index2.html">Категории</a>|</li>
-            <li><a href="index2.html">Личный кабинет</a>|</li>
-            <li><a href="index2.html">О нас</a></li>
+            <li><a href="/">Главная</a>|</li>
+            <li><a href="registration">Регистрация</a>|</li>
+            <li><a href="login">Личный кабинет</a>|</li>
+            <li><a href="about">О нас</a></li>
         </ul>
         <br/><br/>
         <p>Права на макет принадлежат &copy;<a href="http://www.bestfreetemplates.info" target="_blank"
